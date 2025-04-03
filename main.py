@@ -16,7 +16,8 @@ security = HTTPBasic()
 # CORS para permitir acceso desde el frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://color-face-frontend.vercel.app"],
+    allow_origins=["https://color-face-frontend.vercel.app",
+        "https://color-face-frontend-9hwhsnmkx-kevins-projects-6bdc5737.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
